@@ -24,6 +24,7 @@ jobs:
           key: this-key
           
   restoring:
+    needs: [caching]
     strategy:
       matrix:
         os: [ ubuntu-latest, windows-latest, macos-latest ]
