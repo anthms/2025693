@@ -38,6 +38,7 @@ jobs:
           java-package: jdk
       - uses: actions/cache@v3
         with:
+          enableCrossOsArchive: true
           path: .m2
           key: this-key
       - run: |
