@@ -42,5 +42,5 @@ jobs:
           enableCrossOsArchive: true
           path: .m2
           key: this-key
-      - run: |
-          find "$PWD"
+      - run: find "$PWD"
+        shell: bash
