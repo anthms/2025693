@@ -16,6 +16,7 @@ jobs:
           java-package: jdk
       - run: |
           ls
+          mkdir .m2
           touch .m2/data.txt
           ls
       - uses: actions/cache@v3
