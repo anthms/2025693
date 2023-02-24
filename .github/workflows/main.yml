@@ -15,10 +15,9 @@ jobs:
           distribution: 'temurin'
           java-package: jdk
       - run: |
-          ls
           mkdir .m2
           touch .m2/data.txt
-          ls
+          find "$PWD"
       - uses: actions/cache@v3
         with:
           path: .m2
@@ -44,6 +43,4 @@ jobs:
           path: .m2
           key: this-key
       - run: |
-          ls
-          cd .m2
-          ls
+          find "$PWD"
