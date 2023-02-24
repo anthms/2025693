@@ -42,5 +42,4 @@ jobs:
           enableCrossOsArchive: true
           path: .m2
           key: this-key
-      - run: find "$PWD"
-        shell: bash
+      - run: find ./.m2
